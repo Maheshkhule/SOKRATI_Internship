@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!--html section-->
+<html lang="en">
+  <!--head section-->
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+      .btn{
+        background-color: blue;
+        color:white;
+        border-radius: 4px;
+      }
+      #subtlt{
+        margin-left: 37%;
+      }
+    </style>
+  </head>
+  <!--/head section-->
+  <!--body section-->
+  <body>
+    <div class="container">
+      <!--*****************Heading**************************-->
+      <h2>Login to your account</h2>
+      <hr>
+      <!--form section-->
+      <form class="form-horizontal" action="http://maheshkhule22@gmail.com" method="post">
+
+        <!--Username field section-->
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">User name</label>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="email" placeholder="admin" required="">
+          </div>
+        </div>
+        <!--/Username field section-->
+        <!--Password field section-->
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">Password</label>
+          <div class="col-sm-4">          
+            <input type="password" class="form-control" id="pwd" placeholder="********" required title="8 characters required" minlength="8">
+          </div>
+        </div>
+        <!--/Password field section-->
+        <!--Sign in Button-->
+        <div class="form-group">        
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign in</button>
+            <a href="https://sokrati.com">Forgot Password ?</a>
+          </div>
+        </div>
+        <div id="subtlt">Powered by Sokrati</div>
+      </form>
+      <!--/form section-->
+    </div>
+  </body>
+  <!--body section-->
+</html>
+<!--html section-->

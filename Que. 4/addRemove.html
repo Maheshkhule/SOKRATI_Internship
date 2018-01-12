@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--html section-->
+<html>
+    <!--head section-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>pairSelect plugin</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="index.js"></script> 
+    </head>
+    <!--/head section-->
+    <!--body section-->
+    <body>
+        <!--first select section-->
+        <select id="MasterSelectBox" multiple size="6" style="min-width: 200px;float:left;">
+            <option value="First">Html</option>
+            <option value="Second">CSS</option>
+            <option value="Third">JavaScript</option>
+            <option value="Fourth">Jquery</option>
+            <option value="Fifth">AJAX</option>
+            <option value="Fifth">AngularJs</option>
+            <option value="Fifth">HTML 5</option>
+            <option value="Fifth">CSS 3</option>
+        </select>
+        <!--/first select section-->
+        <div style="float:left;margin:10px;">
+            <button id="btnAdd">></button><br>
+            <button id="btnRemove"><</button>
+        </div>
+        <!--second select section-->
+        <select id="PairedSelectBox" multiple size="6" style="min-width: 200px;float:left;">
+        </select>
+        <!--second select section-->
+        <!--javascript code section-->
+        <script>
+          $(document).ready( function(){
+         
+                $('#MasterSelectBox').pairMaster();
+                $('#btnAdd').click(function(){
+                    $('#MasterSelectBox').addSelected('#PairedSelectBox');
+                });
+                $('#btnRemove').click(function(){
+                    $('#PairedSelectBox').removeSelected('#MasterSelectBox');
+                });
+            });
+        </script>
+        <!--/javascript code section-->
+    </body>
+    <!--/body section-->
+</html>
+<!--/html section-->

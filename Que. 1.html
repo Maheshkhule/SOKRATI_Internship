@@ -1,0 +1,32 @@
+<!--validate function- it shows error if user not provide argument to
+ it and if user give an argument then it will argument in alert -->
+<!DOCTYPE html>
+<!--html section-->
+<html>
+  <!--head section-->
+  <head>
+    <title>validate function</title>
+  </head>
+  <!--/html section-->
+  <!--body section-->
+  <body>
+    <h1>Hello...I am a validate function</h1>
+
+    <!--Javascript code-->
+    <script>
+      var validate = function(){
+        var arg = prompt("Give me INPUT");
+        if ( arg==""){
+         alert("Error.. You have not given any argument");//displaying error if user not give INPUT
+        }
+        else{
+         alert("your argument is:"+ arg);  //displaying argument in alert
+        }
+      }
+    validate(); //calling validate function
+    </script>
+    <!--/JavaScript code-->
+  </body>
+  <!--/body section-->
+</html>
+<!--/html section-->
